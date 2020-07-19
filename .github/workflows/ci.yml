@@ -29,7 +29,7 @@ jobs:
       if:  env.BUILD == 'true'
     
     - name: Track
-      run: echo env.BUILD
+      run: echo ${{ env.BUILD }}
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
