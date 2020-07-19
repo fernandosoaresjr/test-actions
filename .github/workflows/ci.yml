@@ -21,15 +21,15 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Check labels
-    - run: echo ::set-env name=BUILD::true
+      run: echo ::set-env name=BUILD::true
       shell: bash
 
     - name: Build
-    - run: echo "Building..."
+      run: echo "Building..."
       if:  env.BUILD == 'true'
     
     - name: Track
-    - run: echo env.BUILD
+      run: echo env.BUILD
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
