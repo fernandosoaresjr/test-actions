@@ -1,7 +1,5 @@
 name: PR Analyze
-on:
-  issue_comment:
-    types: [ created ]
+on: issue_comment
     
 jobs:
   deploy:
@@ -17,4 +15,4 @@ jobs:
         #   GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       # - run: 'echo Found it!'
       #   if: steps.check.outputs.triggered == 'true'
-      - run: 'echo OI!'
+      - run: 'echo OI OI!'
